@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Home\EsController;
 use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Home\QueueTestController;
 use Illuminate\Http\Request;
 
 /*
@@ -31,4 +32,6 @@ Route::get('/home/delete', [HomeController::class, 'delete']);
 Route::get('/es/test', [EsController::class, 'test']);
 Route::get('/es/search', [EsController::class, 'get']);
 Route::get('/es/delete', [EsController::class, 'delete']);
+
+Route::get('/home/queue_test', [QueueTestController::class, 'testQueue']);
 

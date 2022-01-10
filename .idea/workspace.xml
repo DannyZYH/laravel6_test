@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="06853a2a-8f4d-45a0-a2d4-71e2a691fc5f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Home/QueueTestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Department.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel_6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel_6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/queue.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +152,18 @@
       <path value="$PROJECT_DIR$/vendor/tamayo/laravel-scout-elastic" />
       <path value="$PROJECT_DIR$/vendor/algolia/algoliasearch-client-php" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
+      <path value="$PROJECT_DIR$/vendor/laravel/horizon" />
+      <path value="$PROJECT_DIR$/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/vendor/vladimir-yuldashev/laravel-queue-rabbitmq" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/dsn" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-tools" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-lib" />
+      <path value="$PROJECT_DIR$/vendor/queue-interop/amqp-interop" />
+      <path value="$PROJECT_DIR$/vendor/queue-interop/queue-interop" />
     </include_path>
   </component>
   <component name="ProjectId" id="1t9Gsmv7n93LnSHsBmu3dHOiLuQ" />
@@ -129,20 +172,24 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Home" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Home" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Home" />
     </key>
   </component>
   <component name="RunManager">
@@ -167,18 +214,44 @@
       <workItem from="1623083649508" duration="3000" />
       <workItem from="1623649306237" duration="1352000" />
       <workItem from="1637612137566" duration="23604000" />
-      <workItem from="1638615365984" duration="752000" />
+      <workItem from="1638615365984" duration="11451000" />
+      <workItem from="1639735172669" duration="14659000" />
+      <workItem from="1640286295205" duration="12718000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="598" y="299" width="708" height="522" key="find.popup" timestamp="1637924943429">
+    <state x="626" y="392" key="#Notifications" timestamp="1639327163284">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="598" y="299" width="708" height="522" key="find.popup/-393.-1415.2560.1415/0.0.1792.1120@0.0.1792.1120" timestamp="1637924943429" />
+    <state x="626" y="392" key="#Notifications/-393.-1415.2560.1415/0.0.1792.1120@0.0.1792.1120" timestamp="1639327163284" />
+    <state x="634" y="319" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1640884587875">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="634" y="319" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-393.-1415.2560.1415/0.0.1792.1120@0.0.1792.1120" timestamp="1640884587875" />
+    <state x="405" y="196" key="SettingsEditor" timestamp="1641832616870">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="405" y="196" key="SettingsEditor/-393.-1415.2560.1415/0.0.1792.1120@0.0.1792.1120" timestamp="1641832616870" />
+    <state x="598" y="299" width="708" height="522" key="find.popup" timestamp="1640876910498">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="598" y="299" width="708" height="522" key="find.popup/-393.-1415.2560.1415/0.0.1792.1120@0.0.1792.1120" timestamp="1640876910498" />
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1637947913545">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

@@ -1,0 +1,2820 @@
+[2021-12-19 18:40:21][9pyCUcCBOkAwwYKvB0vmsv6zH5YW7QJE] Processing: App\Jobs\ProcessPodcast
+[2021-12-19 18:40:21][9pyCUcCBOkAwwYKvB0vmsv6zH5YW7QJE] Processed:  App\Jobs\ProcessPodcast
+[2021-12-19 18:40:47][AgCs6Xk1tBHyaAyiDcpcnyDB47D5pZPS] Processing: App\Jobs\ProcessPodcast
+[2021-12-19 18:40:47][AgCs6Xk1tBHyaAyiDcpcnyDB47D5pZPS] Processed:  App\Jobs\ProcessPodcast
+[2021-12-24 17:15:53][1] Processing: App\Jobs\ProcessPodcast
+[2021-12-24 17:15:54][1] Processed:  App\Jobs\ProcessPodcast
+[2021-12-24 17:15:59][2] Processing: App\Jobs\ProcessPodcast
+[2021-12-24 17:15:59][2] Processed:  App\Jobs\ProcessPodcast
+[2021-12-25 09:57:37][4] Processing: App\Jobs\ProcessPodcast
+[2021-12-25 09:57:37][4] Processed:  App\Jobs\ProcessPodcast
+[2021-12-25 09:57:40][5] Processing: App\Jobs\ProcessPodcast
+[2021-12-25 09:57:40][5] Processed:  App\Jobs\ProcessPodcast
+[2021-12-25 09:57:46][6] Processing: App\Jobs\ProcessPodcast
+[2021-12-25 09:57:46][6] Processed:  App\Jobs\ProcessPodcast
+[2021-12-25 17:32:05][8] Processing: App\Jobs\ProcessPodcast
+[2021-12-25 17:32:05][8] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:25:53][9] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:25:53][9] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:26:59][10] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:26:59][10] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:28:44][11] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:28:44][11] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:29:32][12] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:29:32][12] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:30:32][13] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:30:32][13] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:30:59][14] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:30:59][14] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:31:23][15] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:31:23][15] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:31:44][16] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:31:44][16] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:32:20][17] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:32:20][17] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:32:41][18] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:32:41][18] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:34:05][19] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:34:05][19] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:34:59][20] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:34:59][20] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:38:06][21] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:38:06][21] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:55:48][22] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:55:48][22] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:56:15][23] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:56:15][23] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:56:24][24] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:56:24][24] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:56:33][25] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:56:33][25] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:56:39][26] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:56:39][26] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:57:21][27] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:57:21][27] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 14:57:44][28] Processing: App\Jobs\ProcessPodcast
+[2021-12-30 14:57:44][28] Processed:  App\Jobs\ProcessPodcast
+[2021-12-30 17:19:08][BkquNRq9zyRBXn9569DdUGhP8QQ3pQLv] Processing: App\Jobs\mqQueue
+[2021-12-30 17:19:09][BkquNRq9zyRBXn9569DdUGhP8QQ3pQLv] Processed:  App\Jobs\mqQueue
+
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+
+   PhpAmqpLib\Exception\AMQPIOException  : stream_socket_client(): unable to connect to tcp://rabbitmq:5672 (Connection refused)
+
+  at /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php:111
+    107|                 $this->context
+    108|             );
+    109|             $this->cleanup_error_handler();
+    110|         } catch (\ErrorException $e) {
+  > 111|             throw new AMQPIOException($e->getMessage());
+    112|         }
+    113| 
+    114|         if (false === $this->sock) {
+    115|             throw new AMQPIOException(
+
+  Exception trace:
+
+  1   PhpAmqpLib\Wire\IO\StreamIO::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php:241
+
+  2   PhpAmqpLib\Connection\AbstractConnection::connect()
+      /var/www/laravel_6/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php:24
+
+  Please use the argument -v to see more details.
+[2021-12-30 17:24:40][WrPBhXnp22iQEvDRDZuFr5NeCrdjBoqM] Processing: App\Jobs\mqQueue
+[2021-12-30 17:24:40][WrPBhXnp22iQEvDRDZuFr5NeCrdjBoqM] Processed:  App\Jobs\mqQueue
